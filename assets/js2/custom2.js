@@ -76,7 +76,7 @@
     const modalContainer = document.getElementById("modalContainer");
     const close1 = document.getElementById("close");
     const close2 = document.getElementById("close2");
-
+    const close4 = document.getElementById("close4");
     open1.addEventListener('click', () => {
       modalContainer.classList.add('show');
     });
@@ -86,5 +86,9 @@
     });
 
     close2.addEventListener('click', () => {
+      modalContainer.classList.remove('show');
+    });
+
+    close4.addEventListener('click', () => {
       modalContainer.classList.remove('show');
     });
